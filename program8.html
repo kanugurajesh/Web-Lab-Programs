@@ -1,0 +1,65 @@
+<!-- Demonstrate sort method  in javascript . -->
+ 
+<html>
+
+<head>
+
+<script>
+
+function f1(list)
+
+{
+
+list.sort(function(a,b) { return a-b;} );
+
+}
+
+function f2(list)
+
+{
+
+list.sort(function(a,b) { return b-a;} );
+
+}
+
+function f3(list1)
+
+{
+
+        list1.sort();
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<script>
+
+
+var list=[8,13,9,1];
+
+f1(list);
+
+document.write(list);
+
+f2(list);
+
+document.write("<br>",list);
+
+var list1=["maths","physics","english"];
+
+document.write("<br>",list1);
+
+f3(list1);
+
+document.write("<br>",list1);
+
+
+</script>
+
+</body>
+
+</html>

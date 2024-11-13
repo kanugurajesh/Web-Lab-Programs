@@ -1,0 +1,238 @@
+<!-- Create a student registration form using HTML Forms. -->
+
+<html>
+
+<body bgcolor="cyan">
+
+    <center>
+
+        <h1>STUDENT REGISTRATION FORM</h1>
+
+
+        <form>
+
+            <table cellpadding="5" cellspacing="5">
+
+                <tr>
+
+                    <td><label for="name">Name:</label></td>
+
+                    <td><input type="text" id="name" name="name" /></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><label for="password">Password:</label></td>
+
+                    <td><input type="password" id="password" name="password" /></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><label for="father_name">Father's Name:</label></td>
+
+                    <td><input type="text" id="father_name" name="father_name" /></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><label for="dob">D.O.B:</label></td>
+
+                    <td><input type="date" id="dob" name="dob" /></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td>Gender:</td>
+
+                    <td>
+
+                        <label><input type="radio" value="male" name="gender" /> Male</label>
+
+                        <label><input type="radio" value="female" name="gender" /> Female</label>
+
+                    </td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><label for="address">Address:</label></td>
+
+                    <td><textarea id="address" rows="3" cols="30"></textarea></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><label for="email">Email ID:</label></td>
+
+                    <td><input type="email" id="email" name="email" /></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td colspan="2"><label>Examination Details:</label></td>
+
+                </tr>
+
+            </table>
+
+
+            <table border="1" cellpadding="5" cellspacing="5">
+
+                <tr>
+
+                    <th>Examination Passed</th>
+
+                    <th>Specialization</th>
+
+                    <th>Board/University</th>
+
+                    <th>% of Marks</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>SSC/10th Std</td>
+
+                    <td>-</td>
+
+                    <td><input type="text" name="ssc_board" /></td>
+
+                    <td><input type="text" name="ssc_marks" /></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>INTER</td>
+
+                    <td>
+
+                        <select name="inter_specialization">
+
+                            <option value="mpc" selected>MPC</option>
+
+                            <option value="bipc">BiPC</option>
+
+                        </select>
+
+                    </td>
+
+                    <td><input type="text" name="inter_board" /></td>
+
+                    <td><input type="text" name="inter_marks" /></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>ENGG</td>
+
+                    <td>
+
+                        <select name="engg_specialization">
+
+                            <option value="cse" selected>CSE</option>
+
+                            <option value="ece">ECE</option>
+
+                            <option value="eee">EEE</option>
+
+                        </select>
+
+                    </td>
+
+                    <td><input type="text" name="engg_board" /></td>
+
+                    <td><input type="text" name="engg_marks" /></td>
+
+                </tr>
+
+            </table>
+
+
+            <table cellpadding="5" cellspacing="5">
+
+                <tr>
+
+                    <td>Languages Known:</td>
+
+                    <td>
+
+                        <label><input type="checkbox" name="languages" value="C" /> C</label>
+
+                        <label><input type="checkbox" name="languages" value="C++" /> C++</label>
+
+                        <label><input type="checkbox" name="languages" value="java" /> Java</label>
+
+                        <label><input type="checkbox" name="languages" value=".net" /> .NET</label>
+
+                        <label><input type="checkbox" name="languages" value="others" /> Others</label>
+
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td><label for="place">Place:</label></td>
+
+                    <td><input type="text" id="place" name="place" /></td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td><label for="photo">Upload Your Photo:</label></td>
+
+                    <td><input type="file" id="photo" name="photo" /></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td colspan="2">
+
+                        <input type="submit" value="Submit" />
+
+                        <input type="reset" value="Reset" />
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+
+    </center>
+
+</body>
+
+</html>

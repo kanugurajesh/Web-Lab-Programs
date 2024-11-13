@@ -1,0 +1,152 @@
+<!-- Demonstrate validation using JS & HTML over given email-id and password. -->
+
+<body>
+
+<script>
+
+var email=prompt("enter u r email-id:");
+
+var pwd=prompt("enter password:");
+
+var p=email.search(/^[a-zA-Z][a-zA-Z0-9]*@[a-zA-Z]+\.[a-zA-Z]+$/);
+
+var q=pwd.search(/^[a-zA-Z0-9]+$/);
+
+var st1="",st2="";
+
+if(email=="")
+
+st1="enter email";
+
+else
+
+if(p==-1)
+
+st1="Sorry, Email is Inavild";
+
+else
+
+st1="Great, your email id is valid";
+
+if(pwd=="")
+
+st2="enter paswd";
+
+else
+
+if(q!=-1)
+
+{
+
+   if(pwd.length<6)
+
+        st2="password must be minimum six characters..";
+
+    else
+
+         st2="Your password is  valid";
+
+}
+
+else
+
+  st2="please enter only alphanumerics for password";
+
+
+
+alert(st1+"\n"+st2);
+
+</script>
+
+</body>
+
+
+10. Demonstrate date handling functions in javascript.
+
+
+Date.html:
+
+
+<HTML>
+
+ <HEAD>
+
+  <TITLE> New Document </TITLE>
+
+ 
+
+ </HEAD>
+
+
+ <BODY>
+
+  <SCRIPT LANGUAGE="JavaScript"  src="date.js">
+
+  <!--
+
+        
+
+  //-->
+
+  </SCRIPT>
+
+ </BODY>
+
+</HTML>
+
+
+
+Date.js:
+
+
+// Get the current date
+
+
+      var today = new Date();
+
+
+// Fetch the various parts of the date
+
+
+      var dateString = today.toLocaleString();
+
+      var day = today.getDay();
+
+      var month = today.getMonth();
+
+      var year = today.getFullYear();
+
+      var timeMilliseconds = today.getTime();
+
+      var hour = today.getHours();
+
+      var minute = today.getMinutes();
+
+      var second = today.getSeconds();
+
+      var millisecond = today.getMilliseconds();
+
+
+// Display the parts
+
+
+      document.write(
+
+        "Date: " + dateString + "<br />",
+
+        "Day: " + day + "<br />",
+
+        "Month: " + month + "<br />",
+
+        "Year: " + year + "<br />",
+
+        "Time in milliseconds: " + timeMilliseconds + "<br />",
+
+        "Hour: " + hour + "<br />",
+
+        "Minute: " + minute + "<br />",
+
+        "Second: " + second + "<br />",
+
+        "Millisecond: " + millisecond + "<br />");
+

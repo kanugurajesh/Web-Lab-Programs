@@ -1,0 +1,102 @@
+<!-- Create a dynamic web page demonstrating an event driven calculator using JS functions traversing HTML DOM. -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+
+ <HEAD>
+
+  <TITLE> New Document </TITLE>
+
+ <script>
+
+ function add()
+
+ {
+
+   var a=parseInt(document.f1.t1.value);
+
+   var b=parseInt(document.f1.t2.value);
+
+   c=a+b;
+
+document.f1.t3.value=c;
+
+  }
+
+  function sub()
+
+ {
+
+   var a=parseInt(document.forms[0].elements[0].value);
+
+   var b=parseInt(document.forms[0].elements[1].value);
+
+   c=a-b;
+
+        document.forms[0].elements[6].value=c;
+
+  }
+
+  function mul()
+
+ {
+
+   var a=parseInt(document.getElementById("t1").value);
+
+   var b=parseInt(document.getElementById("t2").value);
+
+   c=a*b;
+
+document.getElementById("t3").value=c;
+
+  }
+
+  function div()
+
+ {
+
+   var a=parseInt(document.f1.t1.value);
+
+   var b=parseInt(document.f1.t2.value);
+
+   c=a/b;
+
+document.f1.t3.value=c;
+
+  }
+
+ </script>
+
+ </HEAD>
+
+
+ <BODY>
+
+ <CENTER>
+
+ <form name=f1>
+
+ Enter number 1 : <input type=text name=t1 id=t1><br>
+
+ Enter number 2 : <input type=text name=t2 id=t2><br> <BR>
+
+<input type="button" onclick="add()" value="ADD" />&nbsp;
+
+<input type="button" onclick="sub()" value="SUB" />&nbsp;
+
+<input type="button" onclick="mul()" value="MUL" />&nbsp;
+
+<input type="button" onclick="div()" value="DIV" />&nbsp;<br><BR>
+
+ Result : <input type=text name=t3 id=t3><br>
+
+
+
+ </form>
+
+ </CENTER>
+
+ </BODY>
+
+</HTML>
